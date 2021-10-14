@@ -3,7 +3,7 @@ package fr.dessin;
 public class Point2D {
 	private int x;
 	private int y;
-	private static int compteur;
+	private static int compteur = 0;
 	
 	public Point2D() {
 		this(0,0);
@@ -11,7 +11,7 @@ public class Point2D {
 	public Point2D(int x, int y) {
 		this.x = x;
 		this.y = y;
-		this.compteur = 0;
+		compteur++;
 	}
 	
 	/**
@@ -49,9 +49,16 @@ public class Point2D {
 	public void setY(int y) {
 		this.y = y;
 	}
+	/**
+	 * @return the compteur
+	 */
+	public static int getCompteur() {
+		return compteur;
+	}
+	
 	@Override
 	public String toString() {
-		return "Point2D [x=" + x + ", y=" + y + "]";
+		return "Point2D [x=" + x + ", y=" + y + "] 		compteur = " + getCompteur();
 	}
 	
 	
