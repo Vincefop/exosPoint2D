@@ -22,7 +22,7 @@ public class Point2D {
 	public void translater( int dX, int dY) {
 		this.setX(dX+this.getX());
 		this.setY(dY+this.getY());
-	}
+	}   
 	
 	
 	/**
@@ -56,10 +56,6 @@ public class Point2D {
 		return compteur;
 	}
 	
-	@Override
-	public String toString() {
-		return "Point2D [x=" + x + ", y=" + y + "] 		compteur = " + getCompteur();
-	}
 	
 	
 }

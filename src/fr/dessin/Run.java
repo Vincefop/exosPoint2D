@@ -45,7 +45,14 @@ public class Run {
 		
 		System.out.println(Point2D.getCompteur());
 		
+		
 		//Exo5
+		Point3D p3 = new Point3D();
+		System.out.println(p3);
+		
+		p3.translater(1, 2, 3);
+		System.out.println(p3);
+		
 		
 	}
 
