@@ -19,10 +19,13 @@ public class Point2D {
 	 * @param dX
 	 * @param dY
 	 */
-	public void translater( int dX, int dY) {
+	public void translater( int dX, int dY) throws PointException {
 //		this.setX(dX+this.getX());
 //		this.setY(dY+this.getY());
 		//CORRECTION
+		if(dX<0 || dY<0) {
+			throw new PointException("Les points ne peuvent pas etre inf a 0");
+		}
 		this.x += dX;
 		this.y += dY;
 	}   

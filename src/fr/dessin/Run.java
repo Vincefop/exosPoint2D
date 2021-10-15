@@ -47,15 +47,20 @@ public class Run {
 		
 		
 		//Exo5
-		Point3D p3 = new Point3D();
-		System.out.println(p3);
-		
-		p3.translater(1, 2, 3);
-		System.out.println(p3);
-		
-		//CORRECTION
-		Point2D p4 = new Point3D(5,5,5);
-		System.out.println("p4 :" +p4);
+		try {
+			Point3D p3 = new Point3D();
+			System.out.println(p3);
+			
+			p3.translater(1, 2, -3);
+			System.out.println(p3);
+			
+			//CORRECTION
+			Point2D p4 = new Point3D(5,5,5);
+			System.out.println("p4 :" +p4);
+			
+		}catch(PointException e) {
+			System.out.println(e.getMessage());
+		}
 		
 	}
 

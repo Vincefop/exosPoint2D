@@ -18,13 +18,18 @@ public class Point3D extends Point2D{
 	 * @param dY
 	 * @param dZ
 	 */
-	public void translater(int dX, int dY, int dZ) {
+	public void translater(int dX, int dY, int dZ) throws PointException{
 //		super.setX(super.getX() + dX);
 //		super.setY(super.getY() + dY);
 //		this.z += dZ; 
 		//Correction
-		this.translater(dX,dY);
-		this.z += dZ; 
+		//try {
+			this.translater(dX,dY);
+			if(dZ<0) throw new PointException("Le point dZ ne peut pas etre inf a 0");
+			this.z += dZ; 
+//		}catch(PointException e) {
+//			
+//		}
 		
 		
 	}
