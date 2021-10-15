@@ -12,15 +12,20 @@ public class Point3D extends Point2D{
 	}
 	
 	/**
+	 * SURCHARGE DE METHODE
 	 * Méthode qui permet d'ajouter des valeurs aux coordonnées d'un point 3D
 	 * @param dX
 	 * @param dY
 	 * @param dZ
 	 */
 	public void translater(int dX, int dY, int dZ) {
-		super.setX(super.getX() + dX);
-		super.setY(super.getY() + dY);
+//		super.setX(super.getX() + dX);
+//		super.setY(super.getY() + dY);
+//		this.z += dZ; 
+		//Correction
+		this.translater(dX,dY);
 		this.z += dZ; 
+		
 		
 	}
 	/**

@@ -53,6 +53,9 @@ public class Run {
 		p3.translater(1, 2, 3);
 		System.out.println(p3);
 		
+		//CORRECTION
+		Point2D p4 = new Point3D(5,5,5);
+		System.out.println("p4 :" +p4);
 		
 	}
 
